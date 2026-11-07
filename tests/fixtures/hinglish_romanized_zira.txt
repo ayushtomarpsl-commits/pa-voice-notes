@@ -1,0 +1,1 @@
+﻿Rahul, Priya ne bola hai ki lead conversion wala bug P0 hai. Jab user lead ko deal mein convert karta hai, toh contact ka email copy nahi ho raha. Maine API mein check kiya, stored procedure mein ek column missing tha. Kal QA pe deploy karna hai, phir PROD pe. Deploy ke baad sheet mein status update kar dena.

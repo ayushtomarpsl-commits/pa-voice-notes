@@ -1,0 +1,25 @@
+.venv/
+data/
+exports/
+__pycache__/
+*.pyc
+.pytest_cache/
+models/
+models/speaker/testwav/
+
+# secrets and local state (never publish)
+.env*
+*.dpapi
+*.sqlite
+*.sqlite-*
+ui_token
+*.log
+
+# the owner's private working notes (local only)
+CLAUDE.md
+docs/README-local.md
+docs/PROJECT-CONTEXT.md
+docs/RESOURCES.md
+docs/FREE-OPTIONS.md
+docs/FREE-SETUP.md
+docs/BUILD-STEPS.md

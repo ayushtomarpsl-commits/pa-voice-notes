@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>PA · Workday memory</title>
+<link rel="preload" href="/static/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2318181b'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%2334c39a'/%3E%3C/svg%3E">
+<script>window.PA_TOKEN = "{{TOKEN}}";</script>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" aria-label="Main">
+    <div class="brand" title="PA — your workday memory">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">PA</span>
+    </div>
+    <nav id="nav" class="nav">
+      <a href="#today" data-tab="today"><i data-icon="sun"></i><span>Today</span><kbd>1</kbd></a>
+      <a href="#topics" data-tab="topics"><i data-icon="stack"></i><span>Topics</span><kbd>2</kbd></a>
+      <a href="#board" data-tab="board"><i data-icon="kanban"></i><span>Board</span><kbd>3</kbd></a>
+      <a href="#people" data-tab="people"><i data-icon="users"></i><span>People</span><kbd>4</kbd></a>
+      <a href="#notes" data-tab="notes"><i data-icon="note"></i><span>Notes</span><kbd>5</kbd></a>
+      <a href="#search" data-tab="search"><i data-icon="search"></i><span>Search</span><kbd>/</kbd></a>
+      <a href="#settings" data-tab="settings" class="nav-bottom"><i data-icon="gear"></i><span>Settings</span><kbd>6</kbd></a>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="island" id="island" role="status" aria-live="polite">
+        <span class="dot" id="rec-dot"></span>
+        <span class="island-label" id="rec-label">Connecting…</span>
+        <span class="island-sep"></span>
+        <span class="meters" id="meters"></span>
+        <span class="island-sub" id="stt-state"></span>
+      </div>
+      <div class="top-actions">
+        <button class="btn ghost" id="btn-pause" title="Pause or resume listening (Shift+P, or Ctrl+Alt+P anywhere)"><i data-icon="pause"></i><span>Pause</span></button>
+        <button class="btn ghost" id="btn-private" title="Private mode: stop listening until you turn it off"><i data-icon="lock"></i><span>Private</span></button>
+      </div>
+    </header>
+
+    <main id="view" class="view" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-modal="true" role="dialog" hidden>
+  <div class="drawer-inner" id="drawer-body"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

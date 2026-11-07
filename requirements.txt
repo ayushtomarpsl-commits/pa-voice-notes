@@ -1,0 +1,15 @@
+faster-whisper==1.2.1
+onnxruntime==1.31.0
+numpy==2.5.4
+soxr==1.1.0
+PyAudioWPatch==0.2.12.9
+soundcard==0.4.6
+fastapi==0.143.1
+uvicorn==0.54.0
+mcp[cli]==2.3.0
+anthropic==1.14.0
+pystray==0.19.5
+pillow==12.3.0
+pytest
+httpx
+sherpa-onnx==1.13.8
